@@ -1,0 +1,3160 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/OpenSans-Light.woff2") format("woff2"), url("../font/OpenSans-Light.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/OpenSans-Regular.woff2") format("woff2"), url("../font/OpenSans-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../font/OpenSans-SemiBold.woff2") format("woff2"), url("../font/OpenSans-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/OpenSans-Bold.woff2") format("woff2"), url("../font/OpenSans-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Subset Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/Subset_NotoSansJP-Regular.woff2") format("woff2"), url("../font/Subset_NotoSansJP-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Subset Noto Sans JP";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/Subset_NotoSansJP-Medium.woff2") format("woff2"), url("../font/Subset_NotoSansJP-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Subset Noto Sans SC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/Subset_NotoSansCJKsc-Regular.woff2") format("woff2"), url("../font/Subset_NotoSansCJKsc-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Subset Noto Sans SC";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/Subset_NotoSansCJKsc-Medium.woff2") format("woff2"), url("../font/Subset_NotoSansCJKsc-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+html[lang^="en"] {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+html[lang="ja"] {
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+html[lang="zh-cn"] {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+
+/* #base
+   -------------------------------------------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+body {
+  color: #000;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
+  background-color: #fff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/**
+ * フルードイメージにします。
+ */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* imgとonject要素でSVGをフルードイメージにします。 */
+[src$=".svg"],
+[data$=".svg"] {
+  width: 100%;
+  /* IE対応 */
+}
+
+/* IE10以降`input[type="text"]`の入力内容の消去を非表示にします。 */
+input::-ms-clear {
+  visibility: hidden;
+}
+
+/* IE10以降の`input[type="password"]`のマスクの一時的解除を非表示にします。 */
+input::-ms-reveal {
+  visibility: hidden;
+}
+
+/* Normalize.cssをリセットします。 */
+figure {
+  margin: 0;
+}
+
+/* ブロック要素の上下のマージンをリセットします。 */
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+blockquote, p, address,
+hr,
+table,
+fieldset, figure,
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* #Icon
+   -------------------------------------------------------------------------- */
+/*doc
+---
+name: Icon
+category: SiteWide
+tag: Icon
+---
+
+アイコンフォントを使ったアイコンを表示します。デフォルトでは`:before`擬似要素で表示されます。
+
+```jade
+p More
+  span.sw-Icon.sw-Icon-linkMore(aria-hidden="true")
+```
+*/
+@font-face {
+  font-family: "template-iconfont";
+  src: url("../font/template-iconfont.eot");
+  src: url("../font/template-iconfont.eot?#iefix") format("eot"), url("../font/template-iconfont.woff") format("woff"), url("../font/template-iconfont.ttf") format("truetype"), url("../font/template-iconfont.svg#template-iconfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 汎用的なアイコンフォントです。 */
+.st-Icon {
+  display: inline-block;
+}
+
+.st-Icon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+}
+
+.st-Icon-arrow_drop_down:before {
+  content: "\EA01";
+}
+
+.st-Icon-chevron-down:before {
+  content: "\EA02";
+}
+
+.st-Icon-chevron-left:before {
+  content: "\EA03";
+}
+
+.st-Icon-chevron-right:before {
+  content: "\EA04";
+}
+
+.st-Icon-chevron-up:before {
+  content: "\EA05";
+}
+
+.st-Icon-close:before {
+  content: "\EA06";
+}
+
+.st-Icon-company:before {
+  content: "\EA07";
+}
+
+.st-Icon-external-link:before {
+  content: "\EA08";
+}
+
+.st-Icon-file-pdf:before {
+  content: "\EA09";
+}
+
+.st-Icon-filter_none:before {
+  content: "\EA0A";
+}
+
+.st-Icon-menu:before {
+  content: "\EA0B";
+}
+
+.st-Icon-pdf:before {
+  content: "\EA0C";
+}
+
+.st-Icon-search:before {
+  content: "\EA0D";
+}
+
+.st-Icon-sphere:before {
+  content: "\EA0E";
+}
+
+/**
+ * template.css
+ */
+.st-Breadcrumb {
+  display: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-Breadcrumb {
+    display: block;
+    margin: 10px 0 10px;
+    font-size: 0.75rem;
+    line-height: 1;
+  }
+}
+
+.st-Breadcrumb_List {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.st-Breadcrumb_List:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.st-Breadcrumb_Item {
+  float: left;
+  color: #666;
+}
+
+.st-Breadcrumb_Item:not(:first-of-type):before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.st-Breadcrumb_Link {
+  color: #666;
+  text-decoration: none;
+}
+
+.st-Breadcrumb_Link:hover {
+  color: #df0523;
+  text-decoration: underline;
+  transition-duration: 0.3s;
+}
+
+.st-DropGlovalNav {
+  background-color: #fff;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-DropGlovalNav {
+    overflow: hidden;
+    position: absolute;
+    z-index: 1000;
+    top: 85px;
+    left: 0;
+    right: 0;
+    height: 98px;
+    margin: auto;
+    padding: 20px 15px;
+    text-align: left;
+    background-color: rgba(79, 79, 79, 0.9);
+  }
+  .st-DropGlovalNav[aria-hidden="false"] {
+    top: 85px;
+  }
+  .st-GlobalNav-divition .st-DropGlovalNav[aria-hidden="false"] {
+    display: none;
+  }
+}
+
+.st-DropGlovalNav_List {
+  display: none;
+  padding: 0 15px;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-DropGlovalNav_List {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 15px;
+    font-size: 0;
+    text-align: center;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-DropGlobalNav_Item {
+    display: inline-block;
+    margin: 0 60px 0 0;
+  }
+  .st-DropGlobalNav_Item:last-child {
+    margin-right: 0;
+  }
+  .st-DropGlobalNav_Item.st-DropGlobalNav_Item-Global {
+    display: none;
+  }
+}
+
+.st-DropGlobalNav_LinkTop {
+  display: block;
+  position: relative;
+  padding: 16px 15px;
+  border-bottom: 1px solid #dadada;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.st-DropGlobalNav_LinkTop[aria-expanded="true"] {
+  border-bottom: 0;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-DropGlobalNav_LinkTop {
+    display: none;
+  }
+}
+
+.st-DropGlobalNav_LinkTop-sp .st-GlobalSiteNav_SubLinkTopIcon {
+  position: absolute;
+  top: 0;
+  right: 19px;
+  bottom: 0;
+  width: 15px;
+  height: 24px;
+  margin: auto;
+}
+
+.st-DropGlobalNav_LinkTop-sp .st-GlobalSiteNav_SubLinkTopIcon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  color: currentColor;
+  font-size: 1.5em;
+}
+
+.st-DropGlobalNav_LinkTop-sp[aria-expanded="true"] .st-GlobalSiteNav_SubLinkTopIcon::before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.st-DropGlobalNav_Link {
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid #dadada;
+  color: #444;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.st-DropGlobalNav_Item:first-child .st-DropGlobalNav_Link {
+  border-top: 1px solid #dadada;
+}
+
+.st-DropGlobalNav_Link[aria-expanded="true"] {
+  border-bottom: 0;
+}
+
+.st-DropGlobalNav_Item-Global .st-DropGlobalNav_Link {
+  padding: 30px 0;
+  border-bottom: 0;
+  color: #8d8d8d;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-DropGlobalNav_Link {
+    display: block;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 0.9375rem;
+    text-decoration: none;
+  }
+  .st-DropGlobalNav_Link:hover {
+    text-decoration: underline;
+  }
+  .st-DropGlobalNav_Link:not(:first-child) {
+    margin-top: 60px;
+    border-top: 0;
+  }
+  .st-DropGlobalNav_Item:first-child .st-DropGlobalNav_Link {
+    border-top: 0;
+  }
+}
+
+.st-DropGlobalNav_Link .st-GlobalSiteNav_SubLinkTitleIcon {
+  display: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-DropGlobalNav_Link .st-GlobalSiteNav_SubLinkTitleIcon {
+    display: inline;
+  }
+}
+
+.st-GlobalNav_DropGnavClose {
+  display: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalNav_DropGnavClose {
+    display: none;
+  }
+  .st-GlobalNav_DropGnavClose[aria-hidden="false"] {
+    display: block;
+    position: absolute;
+    top: 119px;
+    right: 15px;
+    z-index: 10000;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+}
+
+.st-GlobalNav_DropGnavCloseIcon {
+  display: block;
+  position: relative;
+  left: -1px;
+  top: -1px;
+  width: 32px;
+  height: 32px;
+}
+
+:root .st-GlobalNav_DropGnavCloseIcon {
+  left: -0.5px\0;
+  top: -0.5px\0;
+}
+
+.st-GlobalNav_DropGnavCloseIcon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  color: #fff;
+  font-size: 1.3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 20.8px;
+  height: 20.8px;
+  display: block;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-DropGlobalNav_Link .st-GlobalSiteNav_SubLinkTitleIcon {
+    display: none;
+  }
+}
+
+span.st-DropGlobalNav_LinkIcon-pc {
+  display: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  span.st-DropGlobalNav_LinkIcon-pc {
+    display: inline;
+  }
+  span.st-DropGlobalNav_LinkIcon-pc::before {
+    font-family: "template-iconfont";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: none;
+    speak: none;
+    content: "";
+    color: #fff;
+    margin: -.25rem 0 0;
+    font-size: 1.25rem;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+
+.st-CompanyButton {
+  display: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  transition-duration: 0.3s;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-CompanyButton {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 0.75rem;
+    color: #666;
+    line-height: 1;
+    padding-left: 30px;
+    position: relative;
+    top: -3px;
+    z-index: 1;
+  }
+  .st-CompanyButton:hover {
+    color: #df0523;
+  }
+  .st-CompanyButton:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "About Kyocera";
+    font-size: 0.75rem;
+  }
+  [lang=ja] .st-CompanyButton:before {
+    content: "会社情報";
+  }
+  [lang=zh-cn] .st-CompanyButton:before {
+    content: "公司信息";
+  }
+  .st-CompanyButton:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px;
+    margin-left: 20px;
+    width: 1px;
+    height: 19px;
+    background-color: #e6e6e6;
+  }
+  .st-CompanyButton:active:before {
+    position: relative;
+  }
+}
+
+.st-CompanyButton:focus:not(.focus-ring) {
+  outline-width: 0;
+}
+
+.st-CompanyButton_Icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-CompanyButton_Icon {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-CompanyButton_Icon {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: -110px;
+    top: 0;
+    bottom: 0;
+    width: 19px;
+    height: 19px;
+    margin: auto;
+  }
+  [lang=ja] .st-CompanyButton_Icon {
+    left: -75px;
+  }
+  [lang=zh-cn] .st-CompanyButton_Icon {
+    left: -75px;
+  }
+}
+
+.st-CompanyButton_Icon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  position: relative;
+  top: 0.1em;
+  font-size: 2.15rem;
+}
+
+.st-CompanyButton[aria-expanded="true"] .st-CompanyButton_Icon:before {
+  content: "";
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-CompanyButton_Icon:before {
+    font-size: 2.6rem;
+    top: 0.18em;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-CompanyButton_Icon:before {
+    top: .1rem;
+    font-size: 1.125rem;
+    color: #df0522;
+  }
+  .st-CompanyButton[aria-expanded="true"] .st-CompanyButton_Icon:before {
+    content: "";
+  }
+  .st-CompanyButton:hover .st-CompanyButton_Icon:before {
+    color: currentColor;
+  }
+}
+
+html[lang="ja"] .st-GlobalFooter {
+  font-family: "Open Sans", "Subset Noto Sans JP", Arial, Helvetica, sans-serif;
+}
+
+html[lang="zh-cn"] .st-GlobalFooter {
+  font-family: "Open Sans", "Subset Noto Sans SC", Arial, Helvetica, sans-serif;
+}
+
+.st-GlobalFooter {
+  border-top: 1px solid #e6e6e6;
+}
+
+.st-GlobalFooter_Inner {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 0 0;
+}
+
+.st-GlobalFooter_Inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-GlobalFooter_Inner {
+    padding: 20px 15px;
+  }
+}
+
+.st-GlobalFooter_NavArea {
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-GlobalFooter_NavArea {
+    float: left;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.st-GlobalFooter_Nav {
+  display: block;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+  font-size: 0;
+}
+
+.st-GlobalFooter_NavItem {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 0;
+  font-size: 0.75rem;
+}
+
+.st-GlobalFooter_NavItem + .st-GlobalFooter_NavItem:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 1rem;
+  margin: 0 8px;
+  border-left: 1px solid #dadada;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-GlobalFooter_NavItem {
+    padding: 3px 0 2px;
+    font-size: 0.875rem;
+  }
+  .st-GlobalFooter_NavItem + .st-GlobalFooter_NavItem:before {
+    margin: 0 20px;
+  }
+}
+
+.st-GlobalFooter_NavLink {
+  color: #666;
+  text-decoration: none;
+}
+
+.st-GlobalFooter_NavLink:hover {
+  color: #df0523;
+  text-decoration: underline;
+  transition-duration: 0.3s;
+}
+
+.st-GlobalFooter_NavLink > .st-Icon {
+  margin-left: 6px;
+  position: relative;
+  top: -0.1em;
+}
+
+.st-GlobalFooter_NavIconExternal:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  margin-left: 3px;
+  font-size: 1.2em;
+  color: #777;
+}
+
+.st-GlobalFooter_NavLink:hover .st-GlobalFooter_NavIconExternal:before {
+  color: currentColor;
+}
+
+.st-GlobalFooter_CopyrightArea {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-GlobalFooter_CopyrightArea {
+    margin-bottom: 0;
+    float: right;
+  }
+}
+
+.st-GlobalFooter_Copyright {
+  font-size: 0.8125rem;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.st-GlobalFooter_PageTop {
+  display: block;
+  padding: 0 0 4px;
+  text-align: center;
+  background-color: #818181;
+  transition-duration: 0.3s;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-GlobalFooter_PageTop {
+    position: fixed;
+    right: 40px;
+    bottom: 56px;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: rgba(129, 129, 129, 0.7);
+    transition-duration: 2s;
+    transition-property: overflow, visibility, opacity;
+  }
+  .st-GlobalFooter_PageTop[aria-hidden="true"] {
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+  }
+  .st-GlobalFooter_PageTop[aria-hidden="false"] {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    height: 56px;
+  }
+  .st-GlobalFooter_PageTop.st-GlobalFooter_PageTop-static {
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalFooter_PageTop:hover {
+    opacity: 0.6;
+  }
+}
+
+.st-GlobalFooter_PageTopIcon {
+  font-size: 1.9rem;
+  line-height: 1.4;
+  color: #fff;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-GlobalFooter_PageTopIcon {
+    height: 56px;
+    line-height: 56px;
+    margin-top: -0.1em;
+    font-size: 1.6rem;
+  }
+}
+
+html[lang="ja"] .st-GlobalHeader_Logo .st-Logo_Sub {
+  font-family: "Open Sans", "Subset Noto Sans JP", Arial, Helvetica, sans-serif;
+}
+
+html[lang="ja"] .st-GlobalNav_Area .st-GlobalSiteNav:last-child,
+html[lang="ja"] .st-GlobalNav_Area .st-GlobalCommonNav,
+html[lang="ja"] .st-GlobalNav_Area .st-DropGlovalNav {
+  font-family: "Open Sans", "Subset Noto Sans JP", Arial, Helvetica, sans-serif;
+}
+
+html[lang="ja"] .st-GlobalHeader_Buttons {
+  font-family: "Open Sans", "Subset Noto Sans JP", Arial, Helvetica, sans-serif;
+}
+
+html[lang="zh-cn"] .st-GlobalHeader_Logo .st-Logo_Sub {
+  font-family: "Open Sans", "Subset Noto Sans SC", Arial, Helvetica, sans-serif;
+}
+
+html[lang="zh-cn"] .st-GlobalNav_Area .st-GlobalSiteNav:last-child,
+html[lang="zh-cn"] .st-GlobalNav_Area .st-GlobalCommonNav,
+html[lang="zh-cn"] .st-GlobalNav_Area .st-DropGlovalNav {
+  font-family: "Open Sans", "Subset Noto Sans SC", Arial, Helvetica, sans-serif;
+}
+
+html[lang="zh-cn"] .st-GlobalHeader_Buttons {
+  font-family: "Open Sans", "Subset Noto Sans SC", Arial, Helvetica, sans-serif;
+}
+
+.st-GlobalHeader {
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.st-GlobalHeader:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.st-GlobalHeader_Inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.st-GlobalHeader_CloseButtonArea {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.st-GlobalHeader_Logo {
+  display: block;
+  float: left;
+  width: calc(100% - 85px);
+  height: 64px;
+  padding: 12px 0 12px 12px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-GlobalHeader_Logo {
+    width: calc(100% - 112px);
+    height: 64px;
+    padding-left: 15px;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalHeader_Logo {
+    height: 84px;
+    padding: 25px 0 25px 17px;
+    width: 266px;
+    float: left;
+    line-height: 84px;
+  }
+  html[lang="zh-cn"] .st-GlobalHeader_Logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.st-GlobalHeader_Buttons {
+  float: right;
+  width: 85px;
+  height: 64px;
+  padding-top: 18px;
+  padding-right: 5px;
+  /* TODO: 必要かどうか確認する */
+}
+
+.st-GlobalHeader_Buttons:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.st-GlobalHeader_Buttons.st-GlobalHeader_Buttons-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-GlobalHeader_Buttons {
+    width: 112px;
+    height: 64px;
+    padding-top: 5px;
+    padding-right: 0;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalHeader_Buttons {
+    position: relative;
+    width: 234px;
+    height: 84px;
+    padding-top: 0;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 30px;
+    line-height: 126px;
+    text-align: right;
+    float: right;
+  }
+  .st-GlobalNav[aria-hidden="false"] + .st-GlobalHeader_Buttons {
+    position: static;
+  }
+  .st-GlobalHeader_Buttons.st-GlobalHeader_Buttons-devision {
+    width: 400px;
+  }
+}
+
+.st-GlobalHeader_nav {
+  clear: both;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.st-GlobalHeader_StatementArea {
+  display: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalHeader_StatementArea {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 100%;
+  }
+}
+
+.st-GlobalHeader_Statement {
+  display: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalHeader_Statement {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    padding-right: 15px;
+    text-align: right;
+  }
+}
+
+/* 詳細度調整のためセレクタを追加 */
+.st-GlobalHeader_StatementImage.st-GlobalHeader_StatementImage {
+  width: 185px;
+  height: 12px;
+}
+
+html[lang="zh-cn"] .st-GlobalHeader_StatementImage.st-GlobalHeader_StatementImage[src="/_assets/img/common/statement_ch.svg"] {
+  width: 273px;
+  height: 12px;
+}
+
+.st-GlobalInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.st-GlobalLink {
+  display: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalLink {
+    position: relative;
+    top: -2px;
+    left: 0;
+    height: 19px;
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #666;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1;
+    transition-duration: 0.3s;
+  }
+  .st-GlobalLink:hover {
+    color: #df0523;
+  }
+  .st-GlobalLink:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px;
+    margin-left: 14px;
+    width: 1px;
+    height: 19px;
+    background-color: #e6e6e6;
+  }
+}
+
+.st-GlobalLink_Icon {
+  display: inline-block;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalLink_Icon:before {
+    font-family: "template-iconfont";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: none;
+    speak: none;
+    content: "";
+    font-size: 2.6em;
+    color: #333;
+  }
+  .st-GlobalLink:hover .st-GlobalLink_Icon:before {
+    color: currentColor;
+  }
+}
+
+.st-GlobalSiteNav {
+  line-height: 1.25;
+  background-color: #616161;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav {
+    background-color: transparent;
+    height: 85px;
+    line-height: 85px;
+  }
+  .st-GlobalNav-categorySecond .st-GlobalSiteNav,
+  .st-GlobalNav-divition .st-GlobalSiteNav {
+    display: none;
+  }
+}
+
+.st-GlobalSiteNav_SubArea {
+  display: none;
+}
+
+.st-GlobalSiteNav_SubArea[aria-hidden="false"] {
+  display: block;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_SubArea {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1000;
+    top: 85px;
+    right: auto;
+    left: 0;
+    right: 0;
+    height: auto;
+    margin: auto;
+    padding-bottom: 40px;
+    text-align: left;
+    background-color: rgba(79, 79, 79, 0.96);
+  }
+  .st-GlobalSiteNav_SubArea[aria-hidden="false"] {
+    top: 85px;
+  }
+}
+
+.st-GlobalSiteNav_List {
+  padding-left: 0;
+  list-style-type: none;
+  font-size: 0;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_Item {
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 1;
+    font-size: 1rem;
+  }
+}
+
+.st-GlobalSiteNav_Link {
+  display: block;
+  padding: 16px 15px;
+  border-bottom: 1px solid #747474;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #4f4f4f;
+  transition-duration: 0.3s;
+}
+
+html[lang="ja"] .st-GlobalSiteNav_Link,
+html[lang="zh-cn"] .st-GlobalSiteNav_Link {
+  font-weight: 500;
+}
+
+.st-GlobalSiteNav_Link:hover {
+  text-decoration: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_Link {
+    display: inline-block;
+    padding: 14px 17px;
+    background-color: transparent;
+    font-size: 0.9375rem;
+    color: #000;
+    border-bottom: 0;
+    vertical-align: bottom;
+    border-bottom: 1px solid transparent;
+    position: relative;
+  }
+  .st-GlobalSiteNav_Link.st-GlobalSiteNav_Link-current:before, .st-GlobalSiteNav_Link:before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 1px;
+    border-top: 0px solid #df0523;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition-duration: 0.3s;
+    transition-property: width;
+  }
+  .st-GlobalSiteNav_Link.st-GlobalSiteNav_Link-current:before {
+    width: 100%;
+    border-top-width: 1px;
+  }
+  .st-GlobalSiteNav_Link[aria-expanded="true"]:before {
+    width: 100%;
+    border-top-width: 1px;
+  }
+  .st-GlobalSiteNav_Link:hover {
+    color: #df0523;
+  }
+  .st-GlobalSiteNav_Link:focus:not(.focus-ring) {
+    outline-width: 0;
+  }
+}
+
+.st-GlobalSiteNav_LinkIcon {
+  display: none;
+}
+
+.st-GlobalSiteNav_Link-hasChildren .st-GlobalSiteNav_LinkIcon {
+  display: inline-block;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_Link-hasChildren .st-GlobalSiteNav_LinkIcon {
+    display: none;
+  }
+}
+
+.st-GlobalSiteNav_Link-hasChildren {
+  position: relative;
+}
+
+.st-GlobalSiteNav_LinkIcon {
+  position: absolute;
+  top: 0;
+  right: 19px;
+  bottom: 0;
+  width: 15px;
+  height: 24px;
+  margin: auto;
+}
+
+.st-GlobalSiteNav_LinkIcon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  color: #b6b6b6;
+  font-size: 1.5em;
+}
+
+.st-GlobalSiteNav_Link-hasChildren[aria-expanded="true"] .st-GlobalSiteNav_LinkIcon:before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.st-GlobalSiteNav_DivisionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  padding: 16px 15px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #313131;
+}
+
+html[lang="ja"] .st-GlobalSiteNav_DivisionTitle,
+html[lang="zh-cn"] .st-GlobalSiteNav_DivisionTitle {
+  font-weight: 500;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_DivisionTitle {
+    display: none;
+  }
+}
+
+.st-GlobalSiteNav_SubLinkTop {
+  display: block;
+  padding: 16px 15px;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(116, 116, 116, 0.9);
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_SubLinkTop {
+    padding: 0;
+    font-size: 1.375rem;
+    line-height: 64px;
+    height: 64px;
+    font-weight: 600;
+  }
+  .st-GlobalSiteNav_SubLinkTop:hover {
+    text-decoration: underline;
+  }
+}
+
+.st-GlobalSiteNav_SubLinkTopInner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_SubLinkTopInner {
+    padding: 0 15px;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_SubLinkTopIcon:before {
+    font-family: "template-iconfont";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: none;
+    speak: none;
+    content: "";
+    font-size: 1.3em;
+  }
+}
+
+.st-GlobalSiteNav_SubAreaInner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.st-GlobalSiteNav_SubLinkTop + .st-GlobalSiteNav_SubAreaInner {
+  margin-top: -1px;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_SubAreaInner {
+    margin-top: 30px;
+    line-height: 1.4;
+  }
+  .st-GlobalSiteNav_SubLinkTop + .st-GlobalSiteNav_SubAreaInner {
+    margin-top: 30px;
+  }
+}
+
+.st-GlobalSiteNav_GlobalLink {
+  display: block;
+  padding: 30px 15px 30px 12px;
+  color: #bcbcbc;
+  background-color: #4f4f4f;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_GlobalLink {
+    display: none;
+  }
+}
+
+.st-GlobalSiteNav_GlobalLinkIcon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  position: relative;
+  top: -0.1em;
+  font-size: 1.3em;
+}
+
+.st-GlobalSiteNav_SubLinkTitle {
+  display: block;
+  padding: 16px 0;
+  color: #fff;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.st-GlobalSiteNav_SubLinkTitle:not(:first-child) {
+  border-top: 1px solid #727272;
+}
+
+.st-Grid_Item:not(:first-of-type) .st-GlobalSiteNav_SubLinkTitle {
+  border-top: 1px solid #727272;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_SubLinkTitle {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 18px;
+  }
+  .st-GlobalSiteNav_SubLinkTitle:hover {
+    text-decoration: underline;
+  }
+  .st-GlobalSiteNav_SubLinkTitle:not(:first-child) {
+    margin-top: 60px;
+    border-top: 0;
+  }
+  .st-Grid_Item:not(:first-of-type) .st-GlobalSiteNav_SubLinkTitle {
+    border-top: 0;
+  }
+}
+
+.st-GlobalSiteNav_SubLinkTitleIcon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  font-size: 1.3em;
+}
+
+.st-GlobalSiteNav_SubList {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_Link + .st-GlobalSiteNav_SubArea .st-GlobalSiteNav_SubList {
+    margin-left: -30px;
+    padding-left: 0;
+    list-style-type: none;
+    display: block;
+    font-size: 0;
+  }
+}
+
+.st-GlobalSiteNav_SubItem {
+  position: relative;
+  font-size: 1rem;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_Link + .st-GlobalSiteNav_SubArea .st-GlobalSiteNav_SubItem {
+    display: inline-block;
+    width: 100%;
+    padding-left: 30px;
+    font-size: medium;
+    font-size: 1rem;
+    vertical-align: top;
+  }
+}
+
+.st-GlobalSiteNav_SubItem:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1.4em;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-width: 5px 0 5px 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #df0523;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_SubItem:before {
+    left: calc(1em + 16px);
+    top: 0.9em;
+  }
+}
+
+.st-GlobalSiteNav_SubLink {
+  display: block;
+  padding: 16px 0 16px 18px;
+  border-top: 1px solid #727272;
+  color: #ebebeb;
+  text-decoration: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalSiteNav_SubLink {
+    border-top: 0;
+    padding: 8px 1em;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+  }
+  .st-GlobalSiteNav_SubLink:hover {
+    text-decoration: underline;
+  }
+}
+
+.st-GlobalSiteNav_SubLinkIconExternal:before,
+.st-GlobalSiteNav_SubLinkIconInternal:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  margin-top: -0.1em;
+  margin-left: 4px;
+  font-size: 1.3em;
+  color: #ccc;
+}
+
+.st-GlobalSiteNav_SubLinkIconExternal:before {
+  content: "";
+}
+
+.st-GlobalSiteNav_SubLinkIconInternal:before {
+  content: "";
+}
+
+.st-GlobalNav[aria-hidden="true"] {
+  display: none;
+}
+
+.st-GlobalNav[aria-hidden="false"] {
+  display: block;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 100px;
+  clear: both;
+}
+
+.st-GlobalNav.st-GlobalNav-categorySecond, .st-GlobalNav.st-GlobalNav-divition {
+  background-color: #fff;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalNav {
+    background-color: transparent;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 0;
+    width: auto;
+    margin: auto;
+    height: 84px;
+    width: calc(100% - 266px - 234px);
+    float: left;
+    text-align: center;
+    background-color: #fff;
+  }
+  .st-GlobalNav.st-GlobalNav-divition {
+    height: 0;
+  }
+}
+
+.st-GlobalNav_Area {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  z-index: 1000;
+  padding-bottom: 62.5vw;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.st-GlobalNav-categoryFirst .st-GlobalNav_Area {
+  background-color: #4f4f4f;
+}
+
+.st-GlobalNav-categorySecond .st-GlobalNav_Area,
+.st-GlobalNav-divition .st-GlobalNav_Area {
+  background-color: #fff;
+}
+
+.st-GlobalNav-categorySecond .st-GlobalNav_Area[aria-hidden="false"],
+.st-GlobalNav-divition .st-GlobalNav_Area[aria-hidden="false"] {
+  background-color: #fff;
+}
+
+.st-GlobalNav-divition .st-GlobalNav_Area[aria-hidden="false"] {
+  background-color: #fff;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalNav_Area {
+    position: static;
+    padding-bottom: 0;
+    background-color: transparent;
+  }
+  .st-GlobalNav_Area[aria-hidden="false"] {
+    background-color: transparent;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 0;
+    overflow: hidden;
+    width: auto;
+    margin: auto;
+    display: inline;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .st-GlobalNav-categorySecond .st-GlobalNav_Area[aria-hidden="false"],
+  .st-GlobalNav-divition .st-GlobalNav_Area[aria-hidden="false"] {
+    background-color: transparent;
+  }
+}
+
+.st-GlobalNav_NavClose {
+  display: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalNav_NavClose {
+    display: none;
+  }
+  .st-GlobalNav_NavClose[aria-hidden="false"] {
+    display: block;
+    position: absolute;
+    top: 101px;
+    right: 15px;
+    z-index: 10000;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+}
+
+.st-GlobalNav_NavCloseIcon {
+  display: block;
+  position: relative;
+  left: -1px;
+  top: -1px;
+  width: 32px;
+  height: 32px;
+}
+
+:root .st-GlobalNav_NavCloseIcon {
+  left: -0.5px\0;
+  top: -0.5px\0;
+}
+
+.st-GlobalNav_NavCloseIcon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  color: #fff;
+  font-size: 1.3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 20.8px;
+  height: 20.8px;
+  display: block;
+}
+
+.st-GlobalNav_SearchClose {
+  display: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalNav_SearchClose {
+    display: none;
+  }
+  .st-GlobalNav_SearchClose[aria-hidden="false"] {
+    display: block;
+    position: absolute;
+    opacity: 1;
+    top: 119px;
+    right: 15px;
+    z-index: 10000;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+}
+
+.st-GlobalNav_SearchClose:focus:not(.focus-ring) {
+  outline-width: 0;
+}
+
+@-moz-document url-prefix() {
+  .st-GlobalNav_SearchClose:focus {
+    outline: 1px dotted #212121;
+  }
+}
+
+.st-GlobalNav_SearchCloseIcon {
+  display: block;
+  position: relative;
+  left: -1px;
+  top: -1px;
+  width: 32px;
+  height: 32px;
+}
+
+:root .st-GlobalNav_SearchCloseIcon {
+  left: -0.5px\0;
+  top: -0.5px\0;
+}
+
+.st-GlobalNav_SearchCloseIcon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  color: #fff;
+  font-size: 1.3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 20.8px;
+  height: 20.8px;
+  display: block;
+}
+
+.st-GlobalCommonNav {
+  background-color: #fff;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalCommonNav {
+    background-color: transparent;
+    height: 85px;
+    line-height: 85px;
+  }
+}
+
+.st-GlobalCommonNav_SubArea[aria-hidden="true"] {
+  display: none;
+}
+
+.st-GlobalCommonNav_SubArea[aria-hidden="false"] {
+  display: block;
+  border-bottom-color: #fff;
+}
+
+.st-GlobalCommonNav_List {
+  padding-left: 0;
+  list-style-type: none;
+  font-size: 0;
+}
+
+.st-GlobalCommonNav_Item {
+  font-size: 1rem;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalCommonNav_Item {
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 1;
+  }
+}
+
+.st-GlobalCommonNav_Link {
+  position: relative;
+  display: block;
+  padding: 16px 15px;
+  border-bottom: 1px solid #dadada;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.st-GlobalCommonNav_Link[aria-expanded="true"] {
+  border-bottom: 0;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalCommonNav_Link {
+    display: none;
+  }
+}
+
+.st-GlobalCommonNav_LinkIcon {
+  position: absolute;
+  top: 0;
+  right: 19px;
+  bottom: 0;
+  width: 15px;
+  height: 24px;
+  margin: auto;
+}
+
+.st-GlobalCommonNav_LinkIcon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  color: currentColor;
+  font-size: 1.5em;
+}
+
+.st-GlobalCommonNav_Link[aria-expanded="true"] .st-GlobalCommonNav_LinkIcon:before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalCommonNav_LinkIcon {
+    display: none;
+  }
+}
+
+.st-GlobalCommonNav_SubAreaInner {
+  padding: 0 15px;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalCommonNav_SubAreaInner {
+    padding: 0;
+  }
+}
+
+.st-GlobalCommonNav_SubList {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalCommonNav_SubList {
+    font-size: 0;
+  }
+}
+
+.st-GlobalCommonNav_SubItem:nth-last-child(1) .st-GlobalCommonNav_SubLink {
+  padding: 30px 0;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  color: #8d8d8d;
+  border-bottom: 0;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalCommonNav_SubItem {
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 1;
+    font-size: 1rem;
+  }
+  .st-GlobalCommonNav_SubItem:nth-last-child(1) .st-GlobalCommonNav_SubLink {
+    display: none;
+  }
+}
+
+.st-GlobalCommonNav_SubLink {
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid #dadada;
+  text-decoration: none;
+  color: #686868;
+}
+
+.st-GlobalCommonNav_SubItem:first-child > .st-GlobalCommonNav_SubLink {
+  border-top: 1px solid #dadada;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-GlobalCommonNav_SubLink {
+    transition-duration: 0.3s;
+    display: inline-block;
+    padding: 14px 17px;
+    background-color: transparent;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #000;
+    border-bottom: 0;
+    vertical-align: bottom;
+    border-bottom: 1px solid transparent;
+    position: relative;
+  }
+  html[lang="ja"] .st-GlobalCommonNav_SubLink,
+  html[lang="zh-cn"] .st-GlobalCommonNav_SubLink {
+    font-weight: 500;
+  }
+  .st-GlobalCommonNav_SubItem:first-child > .st-GlobalCommonNav_SubLink {
+    border-top: 0;
+  }
+  .st-GlobalCommonNav_SubLink:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    border-top: 0px solid #df0523;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition-duration: 0.3s;
+    transition-property: width;
+  }
+  .st-GlobalCommonNav_SubLink.st-GlobalCommonNav_SubLink-current:before {
+    border-top-width: 1px;
+    width: 100%;
+  }
+  .st-GlobalCommonNav_SubLink[aria-expanded="true"]:before {
+    width: 100%;
+    border-top-width: 1px;
+  }
+  .st-GlobalCommonNav_SubLink:hover {
+    color: #df0523;
+  }
+  .st-GlobalCommonNav_SubLink:focus:not(.focus-ring) {
+    outline-width: 0;
+  }
+}
+
+.st-GlobalCommonNav_GlobalIcon {
+  position: relative;
+  left: -4px;
+  margin-right: -2px;
+}
+
+.st-GlobalCommonNav_GlobalIcon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  font-size: 1.5em;
+  position: relative;
+  top: -0.1em;
+}
+
+.st-Header_Inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.st-Icon-Internal:before,
+.st-Icon-External:before,
+.st-Icon-Pdf:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  margin-top: -0.1em;
+  font-size: 1.5em;
+}
+
+.st-Icon-Internal:before {
+  content: "";
+  color: inherit;
+}
+
+.st-Icon-External:before {
+  content: "";
+  color: inherit;
+}
+
+.st-Icon-Pdf:before {
+  content: "";
+  color: #df0523;
+}
+
+/* サンプル用スタイル */
+.st-Icon-Sample a {
+  color: #0071c8;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.st-Icon-Sample a:hover {
+  color: #df0523;
+  text-decoration: underline;
+}
+
+.st-Logo {
+  position: relative;
+  display: table;
+  text-decoration: none;
+}
+
+.st-Logo:hover {
+  text-decoration: none;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-Logo {
+    line-height: 1;
+  }
+}
+
+.st-Logo_Main {
+  display: table-cell;
+  vertical-align: middle;
+  width: 118px;
+  min-width: 118px;
+}
+
+html[lang="zh-cn"] .st-Logo_Main {
+  width: 173px;
+  min-width: 173px;
+  height: 40px;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-Logo_Main {
+    width: 159px;
+    min-width: 159px;
+  }
+  html[lang="zh-cn"] .st-Logo_Main {
+    width: 236px;
+    min-width: 236px;
+    height: 34px;
+  }
+}
+
+.st-Logo_Main img {
+  width: 118px;
+  height: 40px;
+}
+
+html[lang="zh-cn"] .st-Logo_Main img {
+  width: 173px;
+  height: 40px;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-Logo_Main img {
+    width: 159px;
+    height: 34px;
+  }
+  html[lang="zh-cn"] .st-Logo_Main img {
+    width: 236px;
+    height: 34px;
+  }
+}
+
+.st-Logo_Sub {
+  display: table-cell;
+  position: relative;
+  right: -13px;
+  bottom: 7px;
+  color: #666;
+  font-size: 0.5625rem;
+  line-height: 1.2;
+  vertical-align: bottom;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-Logo_Sub {
+    bottom: 5px;
+    font-size: 0.8125rem;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-Logo_Sub {
+    z-index: 1;
+    right: -18px;
+    bottom: 0;
+    padding-right: 34px;
+    font-size: 0.9375rem;
+    vertical-align: middle;
+  }
+}
+
+.st-SearchButton {
+  float: left;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  transition-duration: 0.3s;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-SearchButton {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-SearchButton {
+    float: none;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 0.75rem;
+    color: #666;
+    line-height: 1;
+    padding-left: 30px;
+    position: relative;
+    top: -3px;
+    z-index: 1;
+  }
+  .st-SearchButton:hover {
+    color: #df0523;
+  }
+  .st-SearchButton:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "Search";
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+  .st-SearchButton:active:after {
+    position: relative;
+  }
+}
+
+.st-SearchButton:focus:not(.focus-ring) {
+  outline-width: 0;
+}
+
+@-moz-document url-prefix() {
+  .st-SearchButton:focus {
+    outline: 1px dotted #212121;
+  }
+}
+
+.st-SearchButton_Icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-SearchButton_Icon {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-SearchButton_Icon {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: -65px;
+    top: 0;
+    bottom: 0;
+    width: 19px;
+    height: 19px;
+    margin: auto;
+  }
+}
+
+.st-SearchButton_Icon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  position: relative;
+  top: 0.1em;
+  font-size: 2.15rem;
+}
+
+.st-SearchButton[aria-expanded="true"] .st-SearchButton_Icon:before {
+  content: "";
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-SearchButton_Icon:before {
+    font-size: 2.6rem;
+    top: 0.18em;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-SearchButton_Icon:before {
+    top: -0.15em;
+    font-size: 1.95rem;
+    color: #333;
+  }
+  .st-SearchButton[aria-expanded="true"] .st-SearchButton_Icon:before {
+    content: "";
+  }
+  .st-SearchButton:hover .st-SearchButton_Icon:before {
+    color: currentColor;
+  }
+}
+
+.st-SearchForm {
+  display: none;
+  clear: both;
+  position: fixed;
+  z-index: 1000;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  height: 78px;
+  padding: 19px 15px;
+  background-color: rgba(79, 79, 79, 0.9);
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-SearchForm {
+    position: absolute;
+    top: 84px;
+    height: 98px;
+    padding: 20px 15px 20px;
+  }
+  .st-SearchForm[aria-hidden="false"] {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+.st-SearchForm_Form {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-SearchForm_Form {
+    padding-right: 4em;
+  }
+}
+
+.st-SearchForm_Field {
+  position: relative;
+}
+
+.st-SearchForm_Input {
+  width: 100%;
+  height: 40px;
+  padding: 0 1em 0 35px;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  font-size: 1rem;
+  vertical-align: middle;
+  background-color: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.st-SearchForm_Input[type="search"] {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.st-SearchForm_Input::-webkit-input-placeholder {
+  color: #a3a3a3;
+  font-size: 0.9375rem;
+}
+
+.st-SearchForm_Input:-ms-input-placeholder {
+  color: #a3a3a3;
+  font-size: 0.9375rem;
+}
+
+.st-SearchForm_Input::placeholder {
+  color: #a3a3a3;
+  font-size: 0.9375rem;
+}
+
+.st-SearchForm_Input:focus {
+  outline: 0;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-SearchForm_Input {
+    height: 58px;
+    padding-left: 55px;
+    font-size: 1.5rem;
+  }
+  .st-SearchForm_Input::-webkit-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .st-SearchForm_Input:-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .st-SearchForm_Input::placeholder {
+    font-size: 1.5rem;
+  }
+}
+
+.st-SearchForm_Icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 6px;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.st-SearchForm_Icon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  position: relative;
+  top: -0.1em;
+  color: #555;
+  font-size: 1.8em;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-SearchForm_Icon {
+    left: 10px;
+    width: 38px;
+    height: 38px;
+  }
+  .st-SearchForm_Icon:before {
+    font-size: 2.4rem;
+    top: 0;
+  }
+}
+
+.st-SearchForm_Close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.st-SearchForm_Close:focus {
+  outline: 0;
+  box-shadow: 0 0 5px #1589ee;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-SearchForm_Close {
+    right: 40px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.st-SearchForm_CloseIcon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  position: relative;
+  top: -0.1em;
+  color: #565656;
+  font-size: 1.3em;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-SearchForm_CloseIcon:before {
+    font-size: 2.2em;
+    top: 0;
+  }
+}
+
+.st-SearchForm_Submit {
+  display: none;
+}
+
+.st-Title {
+  margin: 15px 0;
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+html[lang="ja"] .st-Title {
+  font-weight: 200;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-Title {
+    font-size: 1.375rem;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-Title {
+    margin: 25px 0 15px;
+  }
+}
+
+.st-ToggleButton {
+  float: left;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-ToggleButton {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .st-ToggleButton {
+    display: none;
+  }
+}
+
+.st-ToggleButton:focus {
+  outline: 0;
+}
+
+.st-ToggleButton_Icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-ToggleButton_Icon {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.st-ToggleButton_Icon:before {
+  font-family: "template-iconfont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: none;
+  speak: none;
+  content: "";
+  position: relative;
+  top: 0.1em;
+  font-size: 2.15rem;
+}
+
+@media print, screen and (min-width: 768px) {
+  .st-ToggleButton_Icon:before {
+    font-size: 2.6rem;
+    top: 0.18em;
+  }
+}
+
+.st-ToggleButton[aria-expanded="true"] .st-ToggleButton_Icon:before {
+  content: "";
+}
+
+/**
+ * 中国サイト（簡体字）
+ */
+@media print, screen and (min-width: 1024px) {
+  html[lang="zh-cn"] .st-GlobalHeader_Logo {
+    width: 350px;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  html[lang="zh-cn"] .st-GlobalNav {
+    width: calc(100% - 350px - 234px);
+  }
+}
+
+@media print {
+  .st-GlobalHeader_Logo {
+    width: 12% !important;
+  }
+  .st-Logo_Main,
+  .st-Logo_Main img {
+    width: 100px !important;
+    min-width: 100px !important;
+  }
+  html[lang="zh-cn"] .st-Logo_Main, html[lang="zh-cn"]
+  .st-Logo_Main img {
+    width: 148px !important;
+    min-width: 148px !important;
+  }
+  .st-Logo_Sub {
+    padding: 0 !important;
+    font-size: 0.6rem !important;
+  }
+  .st-GlobalSiteNav_Link,
+  .st-GlobalCommonNav_SubLink {
+    padding: 14px 10px !important;
+    font-size: 0.8rem !important;
+  }
+  .st-GlobalHeader_Buttons {
+    width: 22% !important;
+    padding-left: 0 !important;
+  }
+  .st-SearchButton {
+    padding-left: 15px;
+    font-size: 0.6rem !important;
+  }
+  .st-SearchButton_Icon {
+    left: -45px !important;
+  }
+  .st-SearchButton:after,
+  .st-GlobalLink {
+    font-size: 0.6rem !important;
+  }
+  .st-SearchButton_Icon:before {
+    top: 0.05em !important;
+    font-size: 1.3rem !important;
+  }
+  .st-GlobalLink_Icon:before {
+    font-size: 1.3rem !important;
+  }
+  .st-GlobalLink:before {
+    margin: 0 !important;
+    margin-left: 6px !important;
+  }
+  .st-GlobalHeader_StatementImage.st-GlobalHeader_StatementImage {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transform-origin: right center;
+        -ms-transform-origin: right center;
+            transform-origin: right center;
+  }
+  .st-GlobalNav {
+    width: calc(100% - 12% - 22%) !important;
+  }
+  .st-GlobalFooter_NavItem,
+  .st-GlobalFooter_Copyright {
+    font-size: 0.75rem;
+  }
+}
+
+/*# sourceMappingURL=template.css.map */
